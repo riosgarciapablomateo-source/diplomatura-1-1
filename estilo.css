@@ -1,0 +1,215 @@
+h1{
+    font-size: 70px;
+}
+
+
+body{
+    background-color: rgb(125, 193, 248);
+margin: 0;
+padding: 0;
+}
+.contenedor {
+    display: flex ;
+   gap: 20px;
+ 
+   
+       
+        
+   
+}
+
+ul{
+    background-color:brown;
+    display: flex ;
+    width: 350px; 
+   height : 150px;
+      flex-direction: column;
+
+ position: relative;
+ right:8px;
+top: -15.3px;
+ color: rgb(245, 220, 220);
+ transition:all 0.5s ease;
+ 
+}
+
+ul:hover{
+    background-color: rgb(255, 119, 119);
+    transform: scale(1.1);
+    transition:all 0.5s ease;
+}
+.caja2:hover {
+    background-color: rgb(255, 238, 0);
+    transform: rotate(10deg);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5)
+    
+}
+.caja3:hover{
+background-color: aquamarine;
+transform: scale(1.5);
+}
+
+
+
+
+
+.caja2{
+    background-color: antiquewhite;
+        display:flex;
+    width: 1050px;
+    height: 250px;
+    flex-direction: column ;
+     
+}
+.caja3{
+    background-color: bisque;
+    display:flex;
+    width: 500px;
+    height: 1000px;
+    flex-direction: column;
+   transition: all 0.5s ease-in-out;
+}
+li{
+    position: relative;
+    top: 20px;
+  left: 105px;
+  
+font-size:30px ;
+}
+
+.mediaqueries{
+    font-size: 60px;
+    position: relative;
+    top: -35px;
+  left: 10px;
+  
+
+}
+
+.contadicional{
+
+font-size: 60px;
+    position: relative;
+    top: -35px;
+  left: 10px;
+}
+.lorem{
+        font-size: 35px;
+         position: relative;
+    top: -105px;
+    left: 5px;
+}
+.layout{
+    font-size: 35px;
+     position: relative;
+    top: -105px;
+    left:5px ;
+}
+
+@media (max-width: 800px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;      
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;  
+  }
+
+  h1 {
+    font-size: 45px;
+    text-align: left;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100vw;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;  
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;
+    margin: 0;
+    padding: 20px 0 20px 50px;
+    color: black;
+    position: static;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    flex-shrink: 0; 
+  }
+
+  li {
+    position: static;
+    font-size: 25px;
+    margin: 10px 0;
+    list-style: none;
+  }
+
+  .caja2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px 20px 30px 20px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .mediaqueries {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    position: static;
+  }
+
+  .layout {
+    font-size: 20px;
+    position: static;
+    margin: 0;
+  }
+
+  .caja3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;
+    border-top: 1px solid black;
+    padding: 20px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
+    flex-grow: 1; 
+  }
+
+  .contadicional {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: static;
+  }
+
+  .lorem {
+    font-size: 20px;
+    position: static;
+    margin: 0;
+  }
+}
